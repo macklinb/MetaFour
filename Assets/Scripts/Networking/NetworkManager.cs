@@ -562,6 +562,19 @@ public class NetworkManager : MonoBehaviour
         return instance.playerIdToNetConn.FirstOrDefault(x => x.Value == conn).Key;
     }
 
+    public static string GetLocalIPAddress()
+    {
+        var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+
+        foreach (var ip in host.AddressList)
+        {
+            if (ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                return ip.ToString();
+        }
+
+        return "127.0.0.1";
+    }
+
     // This replaces Unity's NetworkServer.SendToAll, since that one doesn't function correctly at all
     public static void SendToAll(short msgType, MessageBase msg)
     {

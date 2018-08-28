@@ -3,16 +3,16 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Vector Battle SDF
   m_EditorClassIdentifier: 
   hashCode: -1334475166
-  material: {fileID: 21309046577972964}
+  material: {fileID: 21185207579041876}
   materialHashCode: 390545065
   fontAssetType: 1
   m_fontInfo:
@@ -37,7 +37,7 @@ MonoBehaviour:
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
-  atlas: {fileID: 28483690948974802}
+  atlas: {fileID: 28369455630342852}
   m_glyphInfoList:
   - id: 32
     x: 6
@@ -929,19 +929,23 @@ MonoBehaviour:
       yAdvance: 0
     xOffset: 0
   fallbackFontAssets: []
-  fontCreationSettings:
-    fontSourcePath: 
-    fontSizingMode: 0
-    fontSize: 0
-    fontPadding: 0
-    fontPackingMode: 0
-    fontAtlasWidth: 0
-    fontAtlasHeight: 0
-    fontCharacterSet: 0
+  m_CreationSettings:
+    sourceFontFileName: 
+    sourceFontFileGUID: e5ab5371525b34943858f13f685767a6
+    pointSizeSamplingMode: 0
+    pointSize: 55
+    padding: 5
+    packingMode: 0
+    atlasWidth: 512
+    atlasHeight: 512
+    characterSetSelectionMode: 0
+    characterSequence: 32 - 126, 160, 8203, 8230, 9633
+    referencedFontAssetGUID: 
+    referencedTextAssetGUID: 
     fontStyle: 0
-    fontStlyeModifier: 0
-    fontRenderMode: 0
-    fontKerning: 0
+    fontStyleModifier: 2
+    renderMode: 6
+    includeFontFeatures: 0
   fontWeights:
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
@@ -969,14 +973,14 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!21 &21309046577972964
+--- !u!21 &21185207579041876
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Vector Battle SDF Material
-  m_Shader: {fileID: 4800000, guid: 5566002718e0dad4aa3be6509d8d79ba, type: 3}
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1000,7 +1004,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 28483690948974802}
+        m_Texture: {fileID: 28369455630342852}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -1018,12 +1022,12 @@ Material:
     - _BumpOutline: 0
     - _ColorMask: 15
     - _Diffuse: 0.5
-    - _FaceDilate: 0.117
+    - _FaceDilate: 0
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
-    - _GlowInner: 0
+    - _GlowInner: 0.05
     - _GlowOffset: 0
-    - _GlowOuter: 0.75
+    - _GlowOuter: 0.05
     - _GlowPower: 0.75
     - _GradientScale: 6
     - _LightAngle: 3.1416
@@ -1036,8 +1040,8 @@ Material:
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.8333333
-    - _ScaleRatioB: 0.57958335
-    - _ScaleRatioC: 0.57958335
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -1060,18 +1064,18 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 0, b: 0, a: 1}
-    - _GlowColor: {r: 1, g: 0.0034782887, b: 0, a: 1}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
---- !u!28 &28483690948974802
+--- !u!28 &28369455630342852
 Texture2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Vector Battle SDF Atlas
   m_ImageContentsHash:
@@ -1086,6 +1090,8 @@ Texture2D:
   m_TextureFormat: 1
   m_MipCount: 1
   m_IsReadable: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
   m_AlphaIsTransparency: 0
   m_ImageCount: 1
   m_TextureDimension: 2

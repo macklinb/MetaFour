@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SetupGizmo_X
   m_Shader: {fileID: 4800000, guid: b26756883fcdad345b612f4b94824e12, type: 3}

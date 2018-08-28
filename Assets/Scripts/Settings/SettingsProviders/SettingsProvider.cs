@@ -132,7 +132,11 @@ public abstract class SettingsProvider
                      settings.networkConfig == Settings.NETWORK_CONFIG_SERVER)
             {
                 // Set the serverAddress to the local one, although this is not taken into account at all
+#if UNITY_2018_2_OR_NEWER
+                settings.serverAddress = NetworkManager.GetLocalIPAddress();
+#else
                 settings.serverAddress = Network.player.ipAddress;
+#endif
             }
         }
 

@@ -3,16 +3,16 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Consolas SDF
   m_EditorClassIdentifier: 
   hashCode: -1106013455
-  material: {fileID: 21058101847231356}
+  material: {fileID: 21916150731838034}
   materialHashCode: -1593528486
   fontAssetType: 1
   m_fontInfo:
@@ -37,7 +37,7 @@ MonoBehaviour:
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
-  atlas: {fileID: 28471246790550164}
+  atlas: {fileID: 28745471114322556}
   m_glyphInfoList:
   - id: 32
     x: 6
@@ -947,19 +947,23 @@ MonoBehaviour:
       yAdvance: 0
     xOffset: 0
   fallbackFontAssets: []
-  fontCreationSettings:
-    fontSourcePath: 
-    fontSizingMode: 0
-    fontSize: 0
-    fontPadding: 0
-    fontPackingMode: 0
-    fontAtlasWidth: 0
-    fontAtlasHeight: 0
-    fontCharacterSet: 0
+  m_CreationSettings:
+    sourceFontFileName: 
+    sourceFontFileGUID: 168cb4b866da299488a69c423f5489a3
+    pointSizeSamplingMode: 0
+    pointSize: 76
+    padding: 5
+    packingMode: 0
+    atlasWidth: 512
+    atlasHeight: 512
+    characterSetSelectionMode: 0
+    characterSequence: 32 - 126, 160, 8203, 8230, 9633
+    referencedFontAssetGUID: 
+    referencedTextAssetGUID: 
     fontStyle: 0
-    fontStlyeModifier: 0
-    fontRenderMode: 0
-    fontKerning: 0
+    fontStyleModifier: 2
+    renderMode: 6
+    includeFontFeatures: 0
   fontWeights:
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
@@ -987,14 +991,14 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!21 &21058101847231356
+--- !u!21 &21916150731838034
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Consolas SDF Material
-  m_Shader: {fileID: 4800000, guid: dca26082f9cb439469295791d9f76fe5, type: 3}
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1018,7 +1022,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 28471246790550164}
+        m_Texture: {fileID: 28745471114322556}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -1086,10 +1090,10 @@ Material:
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
---- !u!28 &28471246790550164
+--- !u!28 &28745471114322556
 Texture2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Consolas SDF Atlas
   m_ImageContentsHash:
@@ -1104,6 +1108,8 @@ Texture2D:
   m_TextureFormat: 1
   m_MipCount: 1
   m_IsReadable: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
   m_AlphaIsTransparency: 0
   m_ImageCount: 1
   m_TextureDimension: 2
